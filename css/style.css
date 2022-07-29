@@ -16,6 +16,60 @@ body {
     font-family: "Inter";
 }
 
+.dark {
+    background-color: #232326;
+    color: #F3F2F0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+.nav-item {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.nav-item:first-child {
+    padding-left: 0;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.nav-link {
+    color: #F3F2F0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #D40000;
+}
+
+.photo {
+    margin-bottom: 120px;
+    min-width: 100%;
+}
+
 .name {
     font-size: 28px;
 }
