@@ -14,11 +14,42 @@
 
 body {
     font-family: "Inter";
+    font-size: 14px;
 }
 
 .dark {
     background-color: #232326;
     color: #F3F2F0;
+}
+
+.dark .nav-link {
+    color: #F3F2F0;
+}
+
+.dark .circle circle {
+    fill: #D40000;
+}
+
+.dark .triangle path {
+    fill: #F3F2F0;
+}
+
+.light {
+    background-color: #F3F2F0;
+    color: #010101;
+}
+
+.light .circle circle {
+    fill: #F3F2F0;
+}
+
+.light .triangle path {
+    fill: fill: #D40000;
+    ;
+}
+
+.light .nav-link {
+    color: #010101;
 }
 
 header {
@@ -65,16 +96,124 @@ header {
     color: #D40000;
 }
 
+.nav-info .nav-item {
+    position: relative;
+}
+
+.nav-info .nav-item::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background: rgba(243, 242, 240, 0.5);
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.nav-info .nav-item:first-child::before {
+    display: none;
+}
+
 .photo {
     margin-bottom: 120px;
     min-width: 100%;
 }
 
+.main {
+    position: relative;
+}
+
+.main .title-h1 {
+    z-index: 3;
+    position: relative;
+}
+
 .name {
     font-size: 28px;
+    z-index: 3;
+    position: relative;
 }
 
 .title-h1 {
     font-size: 74px;
     text-transform: uppercase;
+}
+
+.title-h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+
+.social-item:last-child {
+    position: relative;
+}
+
+.project {
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.project-img {
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image: url(../icons/arrow.svg);
+    margin-left: 15px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-item {
+    width: 24%;
+}
+
+.skill .title-h3 {
+    text-transform: uppercase;
+}
+
+.skill .discription {
+    line-height: 15px;
+    width: 200px;
+}
+
+.circle-main {
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    z-index: 1;
+    left: -128px;
+    top: -50px;
+}
+
+.triangle {
+    position: absolute;
+    z-index: 2;
+    left: -151px;
+    top: 0;
+}
+
+.main .circle {
+    z-index: 2;
+}
+
+.circle-nav {
+    width: 92px;
+    height: 92px;
+    right: 38px;
+    position: absolute;
+    top: 5px;
 }
